@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Order Product</title>
+<title>Order Product Redirect</title>
 </head>
 <body>
-<h3>Order Product</h3>
+<h3>Order Product (Demonstration of Redirect)</h3>
 Select one of the item and specify the amount of item.<br>
+Click Add More Order to order more product.<br>
+Click Check Out Order to calculate the amount of order.<br>
 <hr>
-<form action="orderServ" method="post">
+<form action="orderRedirectServlet" method="post">
 
 Product : <br><br>
 <input type="radio" name="product" value="101">
@@ -26,7 +28,8 @@ Spicy McChicken Deluxe Meal - RM 16.65<br><br>
 Chicken McNuggets 6pcs Meal - RM 13.20<br><br>
 
 Quantity: <input type="text" name="quantity"><br><br>
-<input type="submit" value="Get total and tax">
+<input type="submit" value="Add More Order"><br><br>
+<a href="checkOutRedirectServlet">Check Out Order</a>
 </form>
 </body>
 </html>

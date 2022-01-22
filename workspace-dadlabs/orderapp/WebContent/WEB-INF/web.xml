@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.5">
   <display-name>orderapp</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -48,5 +48,25 @@
   <servlet-mapping>
     <servlet-name>OrderServ</servlet-name>
     <url-pattern>/demo/orderServ</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OrderRedirectServlet</display-name>
+    <servlet-name>OrderRedirectServlet</servlet-name>
+    <servlet-class>demo.ftmk.utem.OrderRedirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderRedirectServlet</servlet-name>
+    <url-pattern>/demo/orderRedirectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckOutRedirectServlet</display-name>
+    <servlet-name>CheckOutRedirectServlet</servlet-name>
+    <servlet-class>demo.ftmk.utem.CheckOutRedirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckOutRedirectServlet</servlet-name>
+    <url-pattern>/demo/checkOutRedirectServlet</url-pattern>
   </servlet-mapping>
 </web-app>

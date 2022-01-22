@@ -14,8 +14,7 @@
 <a href="dateServlet?param=1">Display Tomorrow's Date</a>
 
 <br><br>
-
-<a href="demo/orderForm.html">Order Product</a>
-
+<a href="demo/orderForm.html">Order Product</a> &nbsp; &nbsp;
+<a href="demo/orderRedirectForm.html">Order Product (Redirect)</a>
 </body>
 </html>
